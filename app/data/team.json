@@ -1,0 +1,66 @@
+{
+  "team": [
+    {
+      "id": "aida-bikic",
+      "name": "Aida Bikic",
+      "role": "Forsøgsleder",
+      "title": "Ph.D., Klinisk Psykologi",
+      "affiliation": "Syddansk Universitet",
+      "image": "/images/team/aida-bikic.jpg",
+      "hasImage": true,
+      "bio": "Dr. Aida Bikic er klinisk psykolog og lektor ved Syddansk Universitet, specialiseret i neuroudviklingsforstyrrelser med særligt fokus på ADHD gennem hele livsspændet. Hendes nuværende forskning undersøger, hvordan lysbaseret neurostimulering kan støtte koncentration og daglig funktion hos voksne med ADHD.",
+      "credentials": [
+        "Ph.D. i Klinisk Psykologi",
+        "Certificeret ADHD-specialist",
+        "Autoriseret Klinisk Psykolog"
+      ],
+      "expertise": [
+        "ADHD Vurdering & Behandling",
+        "Neuroudviklingsforstyrrelser",
+        "Klinisk Forsøgsdesign",
+        "Lysterapiforskning"
+      ],
+      "publications": 45,
+      "email": "a.bikic@sdu.dk"
+    },
+    {
+      "id": "ingrid-barisic",
+      "name": "Ingrid Barisic",
+      "role": "Forsker",
+      "title": "Psykolog og Forskningsassistent",
+      "affiliation": "Syddansk Universitet",
+      "image": "/images/team/ingrid-barisic.jpg",
+      "hasImage": true,
+      "bio": "Ingrid Barisic er psykolog og en del af forskningsteamet ved Syddansk Universitet, hvor hun bidrager til den kliniske forskning inden for ADHD. Hun arbejder tæt sammen med forsøgslederen, og vil være kontaktpersonen for CLARA forsøget.",
+      "credentials": [
+        "Psykolog",
+        "Good Clinical Practice (GCP) Certificeret"
+      ],
+      "expertise": [
+        "Klinisk Forskning",
+        "ADHD",
+        "Deltagerkoordinering"
+      ],
+      "publications": 5,
+      "email": "i.barisic@sdu.dk"
+    }
+  ],
+  "studyInfo": {
+    "name": "EVY Lys Studiet",
+    "fullTitle": "Evaluering af Effekten af EVY Lysterapi på Opmærksomhed og Eksekutiv Funktion hos Voksne med ADHD",
+    "phase": "Pivotstudie",
+    "status": "Rekrutterer Deltagere",
+    "targetEnrollment": 120,
+    "currentEnrollment": 0,
+    "estimatedCompletion": "2026",
+    "clinicalTrialsId": "NCT-EVYADHD-2024",
+    "sponsor": "Syddansk Universitet",
+    "locations": [
+      {
+        "name": "Syddansk Universitet",
+        "city": "Odense",
+        "country": "Danmark"
+      }
+    ]
+  }
+}
