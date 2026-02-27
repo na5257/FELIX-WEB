@@ -1,66 +1,62 @@
 {
   "team": [
     {
-      "id": "aida-bikic",
-      "name": "Aida Bikic",
-      "role": "Forsøgsleder",
-      "title": "Ph.D., Klinisk Psykologi",
-      "affiliation": "Syddansk Universitet",
-      "image": "/images/team/aida-bikic.jpg",
-      "hasImage": true,
-      "bio": "Dr. Aida Bikic er klinisk psykolog og lektor ved Syddansk Universitet, specialiseret i neuroudviklingsforstyrrelser med særligt fokus på ADHD gennem hele livsspændet. Hendes nuværende forskning undersøger, hvordan lysbaseret neurostimulering kan støtte koncentration og daglig funktion hos voksne med ADHD.",
-      "credentials": [
-        "Ph.D. i Klinisk Psykologi",
-        "Certificeret ADHD-specialist",
-        "Autoriseret Klinisk Psykolog"
-      ],
-      "expertise": [
-        "ADHD Vurdering & Behandling",
-        "Neuroudviklingsforstyrrelser",
-        "Klinisk Forsøgsdesign",
-        "Lysterapiforskning"
-      ],
-      "publications": 45,
-      "email": "a.bikic@sdu.dk"
+      "id": "klaus-martiny",
+      "name": "Klaus Martiny",
+      "role": "Principal Investigator",
+      "title": "MD, PhD — Psychiatric Centre Copenhagen",
+      "affiliation": "New Interventions in Depression Group (NID-Group), Copenhagen Affective Disorder Research Centre",
+      "bio": "Leading researcher in novel depression interventions with extensive experience in light therapy and brain stimulation approaches for mood disorders.",
+      "expertise": ["Depression Treatment", "Light Therapy", "Clinical Trials"],
+      "email": "",
+      "hasImage": false,
+      "image": ""
     },
     {
-      "id": "ingrid-barisic",
-      "name": "Ingrid Barisic",
-      "role": "Forsker",
-      "title": "Psykolog og Forskningsassistent",
-      "affiliation": "Syddansk Universitet",
-      "image": "/images/team/ingrid-barisic.jpg",
-      "hasImage": true,
-      "bio": "Ingrid Barisic er psykolog og en del af forskningsteamet ved Syddansk Universitet, hvor hun bidrager til den kliniske forskning inden for ADHD. Hun arbejder tæt sammen med forsøgslederen, og vil være kontaktpersonen for CLARA forsøget.",
-      "credentials": [
-        "Psykolog",
-        "Good Clinical Practice (GCP) Certificeret"
-      ],
-      "expertise": [
-        "Klinisk Forskning",
-        "ADHD",
-        "Deltagerkoordinering"
-      ],
-      "publications": 5,
-      "email": "i.barisic@sdu.dk"
+      "id": "laura-sakalauskaite",
+      "name": "Laura Sakalauskaitė",
+      "role": "PhD Student & Investigator",
+      "title": "Industrial PhD — DTU & OptoCeutics ApS",
+      "affiliation": "Technical University of Denmark & OptoCeutics ApS",
+      "bio": "Designed and leads the clinical trial as part of the Horizon 2020 Astrotech project. Researches the intersection of photonics engineering and psychiatric treatment.",
+      "expertise": ["Clinical Trial Design", "Neurostimulation", "Photonics"],
+      "email": "",
+      "hasImage": false,
+      "image": ""
+    },
+    {
+      "id": "paul-michael-petersen",
+      "name": "Paul Michael Petersen",
+      "role": "Co-Investigator",
+      "title": "Professor — Technical University of Denmark",
+      "affiliation": "Department of Electrical and Photonics Engineering, DTU",
+      "bio": "Expert in photonics engineering and light technology. Co-conceived the FELIX study approach combining light technology with psychiatric treatment.",
+      "expertise": ["Photonics Engineering", "Light Technology", "Medical Devices"],
+      "email": "",
+      "hasImage": false,
+      "image": ""
+    },
+    {
+      "id": "kamilla-miskowiak",
+      "name": "Kamilla Woznica Miskowiak",
+      "role": "Neurocognition Lead",
+      "title": "Professor — Copenhagen University Hospital",
+      "affiliation": "Neurocognition and Emotion in Affective Disorders (NEAD) Group, CADIC",
+      "bio": "Designed the neurocognitive test battery for the study. Specialist in cognition and emotion in affective disorders.",
+      "expertise": ["Neurocognition", "Affective Disorders", "Cognitive Assessment"],
+      "email": "",
+      "hasImage": false,
+      "image": ""
     }
   ],
-  "studyInfo": {
-    "name": "EVY Lys Studiet",
-    "fullTitle": "Evaluering af Effekten af EVY Lysterapi på Opmærksomhed og Eksekutiv Funktion hos Voksne med ADHD",
-    "phase": "Pivotstudie",
-    "status": "Rekrutterer Deltagere",
-    "targetEnrollment": 120,
-    "currentEnrollment": 0,
-    "estimatedCompletion": "2026",
-    "clinicalTrialsId": "NCT-EVYADHD-2024",
-    "sponsor": "Syddansk Universitet",
-    "locations": [
-      {
-        "name": "Syddansk Universitet",
-        "city": "Odense",
-        "country": "Danmark"
-      }
-    ]
+  "study": {
+    "name": "FELIX",
+    "fullName": "40 Hz Light Neurostimulation Therapy for Depression",
+    "status": "Recruiting",
+    "enrollment": 60,
+    "registrationId": "NCT05680220",
+    "ethicsApproval": "2300521",
+    "location": "Psychiatric Centre Copenhagen",
+    "institution": "Copenhagen University Hospital"
   }
 }

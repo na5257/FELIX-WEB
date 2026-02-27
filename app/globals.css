@@ -1,30 +1,38 @@
 @import "tailwindcss";
 
 :root {
-  /* Japanese-inspired color palette */
-  --color-ink: #1a1a1a;
-  --color-paper: #faf9f7;
-  --color-stone: #8b8680;
-  --color-bamboo: #6b7c5e;
-  --color-sakura: #e8c4c4;
-  --color-indigo: #3d4f7c;
-  --color-gold: #c9a962;
-  
+  /* Nature-inspired palette — derived from "Light in leaves" */
+  --color-forest-deep: #0f1f13;
+  --color-forest: #1a3a22;
+  --color-sage: #6b8f71;
+  --color-sage-light: #8db48e;
+  --color-leaf: #4a7c3f;
+  --color-gold: #c9a55a;
+  --color-gold-light: #e0c97a;
+  --color-cream: #faf6ee;
+  --color-ivory: #f4efe4;
+  --color-bark: #5a4e3c;
+  --color-stone: #7a7568;
+  --color-charcoal: #2c2c28;
+
   /* Semantic colors */
-  --background: var(--color-paper);
-  --foreground: var(--color-ink);
-  --accent: var(--color-indigo);
-  --accent-light: #5a6d94;
+  --background: var(--color-cream);
+  --foreground: var(--color-forest-deep);
+  --accent: var(--color-forest);
+  --accent-light: var(--color-sage);
   --muted: var(--color-stone);
   --highlight: var(--color-gold);
-  --success: var(--color-bamboo);
+  --highlight-light: var(--color-gold-light);
+  --success: var(--color-leaf);
+  --surface: #ffffff;
+  --surface-warm: var(--color-ivory);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-cormorant);
 }
 
 * {
@@ -38,49 +46,69 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), "Hiragino Kaku Gothic Pro", "Yu Gothic", sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   line-height: 1.7;
   letter-spacing: 0.01em;
 }
 
-/* Japanese-inspired typography */
-.jp-heading {
+/* Elegant typography */
+.heading-serif {
+  font-family: var(--font-serif), 'Georgia', serif;
   font-weight: 300;
-  letter-spacing: 0.08em;
-  line-height: 1.3;
-}
-
-.jp-text {
-  font-weight: 400;
   letter-spacing: 0.02em;
-  line-height: 1.9;
+  line-height: 1.2;
 }
 
-/* Zen divider */
-.zen-divider {
-  width: 60px;
-  height: 1px;
-  background: var(--color-stone);
+.body-text {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
+}
+
+/* Organic divider — like a thin branch */
+.branch-divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-gold) 0%, var(--color-sage-light) 100%);
   margin: 2rem auto;
-  opacity: 0.5;
+  opacity: 0.6;
+  border-radius: 2px;
 }
 
-/* Subtle hover animations */
+/* Light beam accent under text */
+.light-accent {
+  position: relative;
+  display: inline-block;
+}
+
+.light-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, var(--color-gold) 0%, var(--color-gold-light) 60%, transparent 100%);
+  opacity: 0.35;
+  border-radius: 3px;
+}
+
+/* Subtle hover lift */
 .hover-lift {
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover-lift:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 16px 40px rgba(15, 31, 19, 0.1);
 }
 
-/* Fade in animation */
+/* Fade-in animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -93,29 +121,60 @@ body {
   opacity: 0;
 }
 
-.animation-delay-100 { animation-delay: 0.1s; }
-.animation-delay-200 { animation-delay: 0.2s; }
-.animation-delay-300 { animation-delay: 0.3s; }
-.animation-delay-400 { animation-delay: 0.4s; }
-.animation-delay-500 { animation-delay: 0.5s; }
-.animation-delay-600 { animation-delay: 0.6s; }
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
 
-/* Brush stroke accent */
-.brush-accent {
-  position: relative;
-  display: inline-block;
+/* Gradient backgrounds */
+.gradient-forest {
+  background: linear-gradient(160deg, var(--color-forest-deep) 0%, var(--color-forest) 100%);
 }
 
-.brush-accent::after {
+.gradient-warm {
+  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-ivory) 100%);
+}
+
+.gradient-sage {
+  background: linear-gradient(135deg, #eef3ee 0%, var(--color-cream) 100%);
+}
+
+/* Leaf pattern overlay for texture */
+.leaf-texture {
+  position: relative;
+}
+
+.leaf-texture::before {
   content: '';
   position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background: linear-gradient(90deg, var(--color-gold) 0%, transparent 100%);
-  opacity: 0.4;
-  border-radius: 4px;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.02;
+  pointer-events: none;
+}
+
+/* Hero overlay */
+.hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 31, 19, 0.55) 0%,
+    rgba(15, 31, 19, 0.4) 40%,
+    rgba(26, 58, 34, 0.6) 100%
+  );
+}
+
+/* Card styles */
+.card-nature {
+  background: var(--surface);
+  border-radius: 1rem;
+  border: 1px solid rgba(107, 143, 113, 0.12);
+  transition: all 0.3s ease;
+}
+
+.card-nature:hover {
+  border-color: rgba(107, 143, 113, 0.25);
+  box-shadow: 0 8px 30px rgba(15, 31, 19, 0.08);
 }
 
 /* Form styles */
@@ -125,47 +184,70 @@ input, textarea, select {
 
 input:focus, textarea:focus, select:focus {
   outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(61, 79, 124, 0.1);
+  border-color: var(--color-sage);
+  box-shadow: 0 0 0 3px rgba(107, 143, 113, 0.15);
 }
 
-/* Washi paper texture overlay */
-.washi-texture {
+/* Section divider with leaf motif */
+.section-divider {
   position: relative;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-sage-light), transparent);
+  opacity: 0.3;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.washi-texture::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  opacity: 0.015;
-  pointer-events: none;
+/* Number badge */
+.step-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-forest) 0%, var(--color-sage) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1.125rem;
+  flex-shrink: 0;
 }
 
-/* Gradient backgrounds */
-.gradient-warm {
-  background: linear-gradient(135deg, var(--color-paper) 0%, #f5f0e8 100%);
-}
-
-.gradient-cool {
-  background: linear-gradient(135deg, #f0f4f8 0%, var(--color-paper) 100%);
-}
-
-/* Scrollbar styling */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-paper);
+  background: var(--color-cream);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-stone);
+  background: var(--color-sage-light);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-ink);
+  background: var(--color-sage);
+}
+
+/* Stat card */
+.stat-card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.stat-card .stat-value {
+  font-family: var(--font-serif), 'Georgia', serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--color-gold);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-label {
+  font-size: 0.875rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
 }
