@@ -1,28 +1,40 @@
 {
   "team": [
     {
+      "id": "nikolas-aasheim",
+      "name": "Nikolas Aasheim",
+      "role": "Investigator & Marie Curie Fellow",
+      "title": "Cand. Psych. — OptoCeutics ApS & Frederiksberg Hospital",
+      "affiliation": "Copenhagen Affective Disorder Research Centre, Frederiksberg Hospital & OptoCeutics ApS",
+      "bio": "Cand. Psych. and Marie Skłodowska-Curie Fellow, primus motor for FELIX. Early-stage researcher within the Astrotech consortium, investigating the clinical efficacy of 40 Hz gamma neurostimulation for major depressive disorder.",
+      "expertise": ["Clinical Trials", "Neurophotonics", "Translational Neuroscience"],
+      "email": "",
+      "hasImage": true,
+      "image": "/team/nikolas-aasheim.jpg"
+    },
+    {
       "id": "klaus-martiny",
       "name": "Klaus Martiny",
       "role": "Principal Investigator",
-      "title": "MD, PhD — Psychiatric Centre Copenhagen",
-      "affiliation": "New Interventions in Depression Group (NID-Group), Copenhagen Affective Disorder Research Centre",
-      "bio": "Leading researcher in novel depression interventions with extensive experience in light therapy and brain stimulation approaches for mood disorders.",
-      "expertise": ["Depression Treatment", "Light Therapy", "Clinical Trials"],
+      "title": "MD, DMSc, PhD — Clinical Professor, University of Copenhagen",
+      "affiliation": "New Interventions in Depression Group (NID-Group), Copenhagen Affective Disorder Research Centre, Bispebjerg and Frederiksberg Hospital",
+      "bio": "Clinical professor and specialist in psychiatry. Heads an intensive affective disorders unit at Mental Health Center Copenhagen and leads the NID-Group. His research focuses on chronotherapeutic augmentation strategies for depression, including bright light therapy, dynamic LED lighting, wake therapy, and sleep time stabilisation.",
+      "expertise": ["Chronotherapy", "Light Therapy", "Affective Disorders", "Clinical Trials"],
       "email": "",
-      "hasImage": false,
-      "image": ""
+      "hasImage": true,
+      "image": "/team/klaus-martiny.jpg"
     },
     {
-      "id": "nikolas-aasheim",
-      "name": "Nikolas Aasheim",
-      "role": "Research Scientist & Marie Curie Fellow",
-      "title": "MA Psychology — OptoCeutics ApS & Frederiksberg Hospital",
-      "affiliation": "Copenhagen Affective Disorder Research Centre, Frederiksberg Hospital & OptoCeutics ApS",
-      "bio": "Psychologist and Marie Skłodowska-Curie Fellow conducting clinical trials at the Copenhagen Affective Disorder Research Centre. Investigates the clinical efficacy of light-based gamma neurostimulation for major depressive disorder as an early-stage researcher within the Astrotech consortium.",
-      "expertise": ["Clinical Trials", "Neurophotonics", "Translational Neuroscience"],
+      "id": "marcus-carstensen",
+      "name": "Marcus Carstensen",
+      "role": "Principal Investigator, Astrotech",
+      "title": "PhD Electrical Engineering (Photonics) — Co-founder & CSO, OptoCeutics",
+      "affiliation": "OptoCeutics ApS & Technical University of Denmark",
+      "bio": "Co-founder and Chief Scientific Officer of OptoCeutics. Principal Investigator of the Horizon 2020 Astrotech project. His PhD research at DTU on photonics and high-speed holographic laser printing earned the European Innovation Radar Prize for Excellent Science in 2018. Leads development of the invisible spectral flicker technology used in FELIX.",
+      "expertise": ["Photonics", "Neurostimulation", "Medical Devices", "Entrepreneurship"],
       "email": "",
-      "hasImage": false,
-      "image": ""
+      "hasImage": true,
+      "image": "/team/marcus-carstensen.png"
     },
     {
       "id": "paul-michael-petersen",
@@ -33,8 +45,8 @@
       "bio": "Expert in photonics engineering and light technology. Co-conceived the FELIX study approach combining light technology with psychiatric treatment.",
       "expertise": ["Photonics Engineering", "Light Technology", "Medical Devices"],
       "email": "",
-      "hasImage": false,
-      "image": ""
+      "hasImage": true,
+      "image": "/team/paul-michael-petersen.jpg"
     },
     {
       "id": "kamilla-miskowiak",
@@ -45,8 +57,8 @@
       "bio": "Designed the neurocognitive test battery for the study. Specialist in cognition and emotion in affective disorders.",
       "expertise": ["Neurocognition", "Affective Disorders", "Cognitive Assessment"],
       "email": "",
-      "hasImage": false,
-      "image": ""
+      "hasImage": true,
+      "image": "/team/kamilla-miskowiak.jpg"
     }
   ],
   "study": {

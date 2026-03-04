@@ -111,6 +111,11 @@ export default function Home() {
                 desc: t("home.card.science"),
               },
               {
+                href: "/technology",
+                title: t("nav.technology"),
+                desc: t("home.card.technology"),
+              },
+              {
                 href: "/study",
                 title: t("nav.study"),
                 desc: t("home.card.study"),

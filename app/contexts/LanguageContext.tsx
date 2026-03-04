@@ -17,6 +17,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Navigation
     'nav.about': 'Om Studiet',
     'nav.science': 'Videnskaben',
+    'nav.technology': 'Teknologien',
     'nav.participate': 'Deltagelse',
     'nav.team': 'Forskerne',
     'nav.contact': 'Kontakt',
@@ -24,6 +25,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Home page cards
     'home.card.science': 'Lær om gamma-bølger, 40 Hz stimulering og den usynlige spektrale flimmer-teknologi.',
+    'home.card.technology': 'Forstå den patenterede ISF-teknologi og EVY Light-enheden.',
     'home.card.study': 'Forstå studiets opbygning, hvad vi måler, og hvordan tidsforløbet ser ud.',
     'home.card.participate': 'Se om du kan deltage, og find kontaktinformation.',
     'home.card.team': 'Mød forskerne bag FELIX-studiet.',
@@ -77,6 +79,28 @@ const translations: Record<Language, Record<string, string>> = {
     'sci.genus.title': 'GENUS — Gamma Entrainment Using Sensory Stimuli',
     'sci.genus.p1': 'Studiet bygger på GENUS-konceptet, hvor rytmisk sansestimulering bruges til at synkronisere hjernens aktivitet. Tidligere studier har vist, at denne tilgang kan reducere hjernesvind, forbedre kognitive funktioner og have neuroprotektive effekter hos patienter med Alzheimers sygdom.',
     'sci.genus.p2': 'FELIX-studiet er det første til at undersøge, om disse lovende resultater også gælder for depression.',
+
+    // Technology page
+    'tech.label': 'Teknologien',
+    'tech.title': 'Invisible Spectral Flicker',
+    'tech.header.subtitle': 'Sådan leverer EVY Light 40 Hz gamma-stimulering uden synligt flimmer.',
+    'tech.intro': 'FELIX-studiet anvender en non-invasiv neurostimuleringsenhed udviklet af det danske firma OptoCeutics. Enheden — EVY Light — leverer præcis 40 Hz gamma-stimulering via en patenteret teknologi kaldet Invisible Spectral Flicker (ISF).',
+    'tech.problem.title': 'Problemet med stroboskopisk flimmer',
+    'tech.problem.p1': 'Konventionel luminans-flimmer (LF) — simple "tænd-sluk"-pulsationer af lys — kan synkronisere hjernebølger ved 40 Hz, men medfører markant visuelt ubehag. Umaskereret stroboskopisk flimmer kan udløse svimmelhed, migræne, kvalme og i sjældne tilfælde fotosensitiv epilepsi.',
+    'tech.problem.p2': 'For at gamma-stimulering skal være klinisk anvendelig som daglig hjemmebehandling, skal den tolereres over uger uden bivirkninger. Det kræver en anden strategi for at synkronisere gamma-hjernebølger — en der fremkalder det ønskede 40 Hz-respons, men eliminerer det synlige flimmer.',
+    'tech.isf.title': 'Hvad er ISF?',
+    'tech.isf.p1': 'Invisible Spectral Flicker er et dual-modalitets flimmer-system der kombinerer luminans-flimmer med en synkron spektral maskering. Enheden bruger to nøje kalibrerede farvefaser — Fase 1 og Fase 2 — der veksler med 40 Hz.',
+    'tech.isf.p2': 'De to faser er repræsenteret som tætliggende kromaticitetskoordinater i CIE 1931-farverummet. De udgør to subtilt forskellige spektrale sammensætninger — i praksis to næsten identiske nuancer af hvidt lys. Faserne er designet til at være metamerisk matchede: de fremstår visuelt ens for det menneskelige øje under normale betingelser, men deres spektrale profiler adskiller sig tilstrækkeligt til at inducere den ønskede 40 Hz-modulering.',
+    'tech.isf.p3': 'Idet lyset oscillerer mellem disse faser, forbliver den opfattede lysstyrke stabil. Den overordnede luminansændring maskeres af de spektrale skift, hvilket skaber et "næsten umærkeligt flimmer-effekt" — mens 40 Hz-rytmen trænger igennem det visuelle system og synkroniserer neurale oscillationer i hjernens gamma-bånd.',
+    'tech.led.title': 'Præcisions-LED-teknologi',
+    'tech.led.p1': 'Enheden anvender højpræcisions-LED-emittere, optimeret af nanoteknologispecialister til at sikre sømlse overgange med nøjagtig 40 cykler per sekund. Intensitetsbølgeformen viser, hvordan ISF-sporet dæmper synlig pulsering, mens den terapeutiske frekvens bevares.',
+    'tech.evy.title': 'EVY Light-enheden',
+    'tech.evy.p1': 'EVY Light er OptoCeutics\' klinisk testede enhed til daglig brug i hjemmet. Deltagere i FELIX-studiet modtager enheden og bruger den én time dagligt i seks uger som supplement til deres vanlige behandling.',
+    'tech.psd.title': 'Gamma-entrainment: ISF vs. stroboskopisk flimmer',
+    'tech.psd.description': 'Power Spectral Density (PSD) analyser fra EEG-optagelser viser, at ISF kan inducere gamma-entrainment der er sammenlignelig med konventionelt stroboskopisk flimmer — men uden det synlige flimmer og de tilhørende bivirkninger.',
+    'tech.psd.placeholder': 'PSD-plot vil blive tilføjet her.',
+    'tech.cta.text': 'Læs om det kliniske studiedesign.',
+    'tech.cta.button': 'Se studiedesign',
 
     // Study Design
     'design.label': 'Studiedesign',
@@ -168,6 +192,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Navigation
     'nav.about': 'About',
     'nav.science': 'The Science',
+    'nav.technology': 'Technology',
     'nav.participate': 'Participate',
     'nav.team': 'Researchers',
     'nav.contact': 'Contact',
@@ -175,6 +200,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Home page cards
     'home.card.science': 'Learn about gamma waves, 40 Hz stimulation, and the invisible spectral flicker technology.',
+    'home.card.technology': 'Understand the patented ISF technology and the EVY Light device.',
     'home.card.study': 'Understand the study structure, what we measure, and the timeline.',
     'home.card.participate': 'See if you can participate and find contact information.',
     'home.card.team': 'Meet the researchers behind the FELIX study.',
@@ -228,6 +254,28 @@ const translations: Record<Language, Record<string, string>> = {
     'sci.genus.title': 'GENUS — Gamma Entrainment Using Sensory Stimuli',
     'sci.genus.p1': 'The study builds on the GENUS concept, where rhythmic sensory stimulation is used to synchronize brain activity. Previous studies have shown that this approach can reduce brain atrophy, improve cognitive function, and have neuroprotective effects in Alzheimer\'s disease patients.',
     'sci.genus.p2': 'The FELIX study is the first to investigate whether these promising results also apply to depression.',
+
+    // Technology page
+    'tech.label': 'Technology',
+    'tech.title': 'Invisible Spectral Flicker',
+    'tech.header.subtitle': 'How EVY Light delivers 40 Hz gamma stimulation without visible flicker.',
+    'tech.intro': 'The FELIX study uses a non-invasive neurostimulation device developed by the Danish company OptoCeutics. The device — EVY Light — delivers precise 40 Hz gamma stimulation via a patented technology called Invisible Spectral Flicker (ISF).',
+    'tech.problem.title': 'The problem with stroboscopic flicker',
+    'tech.problem.p1': 'Conventional luminance flicker (LF) — simple binary "on-off" pulsations of light — can entrain brainwaves at 40 Hz, but produces significant visual discomfort. Unmasked stroboscopic flicker can trigger dizziness, migraines, nausea, and in rare cases photosensitive epilepsy.',
+    'tech.problem.p2': 'For gamma stimulation to be clinically viable as a daily home treatment, it must be tolerated over weeks without adverse effects. This requires a different strategy for entraining gamma brainwaves — one that entrains the target 40 Hz response while eliminating the perceptible flicker.',
+    'tech.isf.title': 'What is ISF?',
+    'tech.isf.p1': 'Invisible Spectral Flicker is a dual-modality flicker system that combines luminance flicker with a synchronous spectral masking. The device uses two precisely calibrated colour phases — Phase 1 and Phase 2 — that alternate at 40 Hz.',
+    'tech.isf.p2': 'The two phases are represented as closely positioned chromaticity coordinates in the CIE 1931 colour space. They constitute two subtly differentiated spectral compositions — in practice, two nearly identical shades of white light. The phases are engineered to be metamerically matched: they appear visually identical to the human eye under typical viewing conditions, yet their spectral profiles differ sufficiently to induce the desired 40 Hz modulation.',
+    'tech.isf.p3': 'As the light oscillates between these phases, the perceived brightness remains stable. The overt luminance change is concealed by the spectral shifts, creating an "almost imperceptible flicker effect" — while the 40 Hz rhythm penetrates the visual system and entrains neural oscillations in the brain\'s gamma band.',
+    'tech.led.title': 'Precision LED technology',
+    'tech.led.p1': 'The device employs high-precision LED emitters, optimised by nanotechnology specialists to ensure seamless transitions at exactly 40 cycles per second. The intensity waveform shows how the ISF trace neutralises visible pulsing while preserving the therapeutic frequency.',
+    'tech.evy.title': 'The EVY Light device',
+    'tech.evy.p1': 'EVY Light is OptoCeutics\' clinically tested device for daily home use. Participants in the FELIX study receive the device and use it for one hour daily over six weeks as an adjunct to their usual treatment.',
+    'tech.psd.title': 'Gamma entrainment: ISF vs. stroboscopic flicker',
+    'tech.psd.description': 'Power Spectral Density (PSD) analyses from EEG recordings demonstrate that ISF can induce gamma entrainment comparable to conventional stroboscopic flicker — but without the visible flicker and its associated adverse effects.',
+    'tech.psd.placeholder': 'PSD plots will be added here.',
+    'tech.cta.text': 'Read about the clinical study design.',
+    'tech.cta.button': 'View study design',
 
     // Study Design
     'design.label': 'Study Design',

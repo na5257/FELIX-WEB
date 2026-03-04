@@ -72,18 +72,31 @@ export default function SciencePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 gradient-sage">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <p className="text-[var(--muted)] mb-6">{t("science.cta.text")}</p>
-          <a
-            href="/study"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-forest)] text-white rounded-full hover:bg-[var(--color-sage)] transition-colors"
-          >
-            {t("science.cta.button")}
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg>
-          </a>
+      <section className="py-16">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="pt-10 border-t border-[var(--color-sage)]/15">
+            <p className="text-[var(--muted)] text-sm mb-4">{t("science.cta.text")}</p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="/technology"
+                className="inline-flex items-center gap-2 text-sm text-[var(--color-forest)] hover:text-[var(--color-sage)] transition-colors"
+              >
+                {t("nav.technology")}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+              <a
+                href="/study"
+                className="inline-flex items-center gap-2 text-sm text-[var(--color-forest)] hover:text-[var(--color-sage)] transition-colors"
+              >
+                {t("science.cta.button")}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
