@@ -26,10 +26,11 @@ const translations: Record<Language, Record<string, string>> = {
     'home.card.science': 'Lær om gamma-bølger, 40 Hz stimulering og den usynlige spektrale flimmer-teknologi.',
     'home.card.study': 'Forstå studiets opbygning, hvad vi måler, og hvordan tidsforløbet ser ud.',
     'home.card.participate': 'Se om du kan deltage, og find kontaktinformation.',
+    'home.card.team': 'Mød forskerne bag FELIX-studiet.',
     'home.card.readmore': 'Læs mere',
 
     // About page
-    'about.header.subtitle': 'Depression rammer millioner. Vi søger nye løsninger.',
+    'about.header.subtitle': 'Fra grundforskning i astrocytter til klinisk afprøvning af lysterapi mod depression.',
     'about.cta.text': 'Vil du vide mere om videnskaben bag studiet?',
     'about.cta.button': 'Videnskaben bag FELIX',
 
@@ -53,16 +54,16 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Background
     'bg.label': 'Baggrund',
-    'bg.title': 'Hvorfor dette studie?',
-    'bg.p1': 'Depression er en alvorlig og invaliderende sygdom, der rammer mere end 300 millioner mennesker på verdensplan. Nuværende behandlinger virker ikke for alle — ca. en tredjedel af patienterne opnår ikke remission med eksisterende medicin og terapi.',
-    'bg.p2': 'Der er et akut behov for nye, effektive behandlingsformer. FELIX-studiet undersøger en helt ny tilgang: at bruge lys til at stimulere hjernens gamma-bølger og dermed påvirke de neurale netværk, der er involveret i depression.',
-    'bg.p3': 'Tidligere forskning har vist, at 40 Hz lysstimulering kan have neuroprotektive effekter og forbedre kognitive funktioner. Nu undersøger vi for første gang, om denne tilgang også kan hjælpe mennesker med depression.',
-    'bg.stat1.value': '300M+',
-    'bg.stat1.label': 'Mennesker berørt af depression globalt',
-    'bg.stat2.value': '~33%',
-    'bg.stat2.label': 'Opnår ikke remission med nuværende behandling',
+    'bg.title': 'Om FELIX',
+    'bg.p1': 'FELIX er en klinisk forskningsprotokol, der undersøger den kliniske effekt af 40 Hz gamma-neurostimulering leveret non-invasivt gennem pulserende lys til patienter med depression.',
+    'bg.p2': 'Projektet udspringer af Horizon Europes Marie Skłodowska-Curie Actions-programmet under Astrotech-konsortiet, der blev etableret for at opnå en dybere forståelse af astrocytters funktion i hjernen. Denne grundforskning ledte til opdagelsen af, at gamma-frekvent lysstimulering kan påvirke neurale netværk på måder, der potentielt kan gavne patienter med affektive lidelser.',
+    'bg.p3': 'Studiet gennemføres som et randomiseret, dobbeltblindet, placebokontrolleret forsøg ved Psykiatrisk Center København i samarbejde med Danmarks Tekniske Universitet og OptoCeutics ApS, der har udviklet den patenterede teknologi til usynlig spektral flimmer.',
+    'bg.stat1.value': '60',
+    'bg.stat1.label': 'Deltagere i forsøget',
+    'bg.stat2.value': '6 uger',
+    'bg.stat2.label': 'Daglig behandling i hjemmet',
     'bg.stat3.value': '40 Hz',
-    'bg.stat3.label': 'Gamma-frekvens brugt til stimulering',
+    'bg.stat3.label': 'Gamma-frekvens leveret via lys',
 
     // Science
     'sci.label': 'Videnskaben',
@@ -176,10 +177,11 @@ const translations: Record<Language, Record<string, string>> = {
     'home.card.science': 'Learn about gamma waves, 40 Hz stimulation, and the invisible spectral flicker technology.',
     'home.card.study': 'Understand the study structure, what we measure, and the timeline.',
     'home.card.participate': 'See if you can participate and find contact information.',
+    'home.card.team': 'Meet the researchers behind the FELIX study.',
     'home.card.readmore': 'Read more',
 
     // About page
-    'about.header.subtitle': 'Depression affects millions. We are seeking new solutions.',
+    'about.header.subtitle': 'From fundamental astrocyte research to a clinical trial of light therapy for depression.',
     'about.cta.text': 'Want to learn more about the science behind the study?',
     'about.cta.button': 'The science behind FELIX',
 
@@ -203,16 +205,16 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Background
     'bg.label': 'Background',
-    'bg.title': 'Why this study?',
-    'bg.p1': 'Major depressive disorder is a serious and debilitating condition affecting more than 300 million people worldwide. Current treatments fail approximately one-third of patients who do not achieve remission with existing medication and therapy.',
-    'bg.p2': 'There is an urgent need for new, effective treatment approaches. The FELIX study investigates a completely novel approach: using light to stimulate the brain\'s gamma waves and thereby influence the neural networks involved in depression.',
-    'bg.p3': 'Previous research has shown that 40 Hz light stimulation can have neuroprotective effects and improve cognitive function. Now, for the first time, we are investigating whether this approach can also help people with depression.',
-    'bg.stat1.value': '300M+',
-    'bg.stat1.label': 'People affected by depression globally',
-    'bg.stat2.value': '~33%',
-    'bg.stat2.label': 'Do not achieve remission with current treatment',
+    'bg.title': 'About FELIX',
+    'bg.p1': 'FELIX is a clinical research protocol investigating the clinical efficacy of 40 Hz gamma neurostimulation delivered non-invasively through pulsating light in patients with depression.',
+    'bg.p2': 'The project originated from Horizon Europe\'s Marie Skłodowska-Curie Actions programme under the Astrotech consortium, which was established to gain a deeper understanding of astrocyte function in the brain. This fundamental research led to the discovery that gamma-frequency light stimulation can influence neural networks in ways that may benefit patients with affective disorders.',
+    'bg.p3': 'The study is conducted as a randomized, double-blinded, placebo-controlled trial at Psychiatric Centre Copenhagen in collaboration with the Technical University of Denmark and OptoCeutics ApS, who developed the patented invisible spectral flicker technology.',
+    'bg.stat1.value': '60',
+    'bg.stat1.label': 'Participants in the trial',
+    'bg.stat2.value': '6 weeks',
+    'bg.stat2.label': 'Daily treatment at home',
     'bg.stat3.value': '40 Hz',
-    'bg.stat3.label': 'Gamma frequency used for stimulation',
+    'bg.stat3.label': 'Gamma frequency delivered via light',
 
     // Science
     'sci.label': 'The Science',
