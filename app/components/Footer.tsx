@@ -52,8 +52,8 @@ export default function Footer() {
               <li>Psykiatrisk Center K&oslash;benhavn</li>
               <li>K&oslash;benhavns Universitetshospital</li>
               <li className="pt-2">
-                <a href="mailto:felix-study@regionh.dk" className="hover:text-white/80 transition-colors">
-                  felix-study@regionh.dk
+                <a href="mailto:nikolas.johansen.aasheim@regionh.dk" className="hover:text-white/80 transition-colors">
+                  nikolas.johansen.aasheim@regionh.dk
                 </a>
               </li>
             </ul>

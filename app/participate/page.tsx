@@ -112,20 +112,6 @@ export default function ParticipatePage() {
             <div className="space-y-6">
               <div className="card-nature p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[var(--color-gold)]/10 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-[var(--color-gold)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-[var(--foreground)] text-sm mb-1">{t("contact.funding")}</h3>
-                    <p className="text-sm text-[var(--muted)]">{t("contact.funding.value")}</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="card-nature p-6">
-                <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-[var(--color-leaf)]/10 flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-[var(--color-leaf)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -134,8 +120,8 @@ export default function ParticipatePage() {
                   <div>
                     <h3 className="font-medium text-[var(--foreground)] text-sm mb-1">{t("contact.email")}</h3>
                     <p className="text-sm">
-                      <a href="mailto:felix-study@regionh.dk" className="text-[var(--color-sage)] hover:underline">
-                        felix-study@regionh.dk
+                      <a href="mailto:nikolas.johansen.aasheim@regionh.dk" className="text-[var(--color-sage)] hover:underline">
+                        nikolas.johansen.aasheim@regionh.dk
                       </a>
                     </p>
                   </div>

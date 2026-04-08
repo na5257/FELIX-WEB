@@ -174,8 +174,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.location.value': 'Psykiatrisk Center København, Københavns Universitetshospital',
     'contact.registration': 'Registrering',
     'contact.registration.value': 'ClinicalTrials.gov: NCT05680220',
-    'contact.funding': 'Finansiering',
-    'contact.funding.value': 'Horizon 2020 Astrotech (Marie Skłodowska-Curie) og JaschaFonden',
+    
     'contact.email': 'E-mail',
 
     // Footer
@@ -349,8 +348,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.location.value': 'Psychiatric Centre Copenhagen, Copenhagen University Hospital',
     'contact.registration': 'Registration',
     'contact.registration.value': 'ClinicalTrials.gov: NCT05680220',
-    'contact.funding': 'Funding',
-    'contact.funding.value': 'Horizon 2020 Astrotech (Marie Skłodowska-Curie) and JaschaFonden',
+    
     'contact.email': 'Email',
 
     // Footer
