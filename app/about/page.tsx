@@ -19,6 +19,16 @@ export default function AboutPage() {
           <div className="space-y-6 text-[var(--muted)] body-text text-base md:text-lg leading-relaxed">
             <p>{t("bg.p1")}</p>
             <p>{t("bg.p2")}</p>
+            <p>
+              <a
+                href="http://www.astrotechprojectmsca.eu/all-courses/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--color-forest)] hover:text-[var(--color-sage)] transition-colors"
+              >
+                {t("about.astrotech.link")}
+              </a>
+            </p>
             <p>{t("bg.p3")}</p>
           </div>
 
