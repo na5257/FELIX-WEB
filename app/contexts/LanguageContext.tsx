@@ -51,7 +51,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.subtitle': 'Lys som ny vej til behandling af depression',
     'hero.description': 'Et randomiseret, dobbeltblindet klinisk forsøg, der undersøger om 40 Hz lysneurostimulering kan lindre symptomer på depression.',
     'hero.cta.learn': 'Læs mere om studiet',
-    'hero.cta.participate': 'Kan du deltage?',
+    'hero.cta.learn.study': 'Om studiet',
     'hero.registered': 'Registreret på ClinicalTrials.gov',
     'hero.registered.id': 'NCT05680220',
 
@@ -273,7 +273,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.subtitle': 'Light as a new path to treating depression',
     'hero.description': 'A randomized, double-blinded clinical trial investigating whether 40 Hz light neurostimulation can alleviate symptoms of depression.',
     'hero.cta.learn': 'Learn about the study',
-    'hero.cta.participate': 'Can you participate?',
+    'hero.cta.learn.study': 'The study',
     'hero.registered': 'Registered on ClinicalTrials.gov',
     'hero.registered.id': 'NCT05680220',
 

@@ -45,10 +45,10 @@ export default function Home() {
               {t("hero.cta.learn")}
             </a>
             <a
-              href="/participate"
+              href="/study"
               className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-forest-deep)] rounded-full hover:bg-[var(--color-gold-light)] transition-all duration-300 font-medium"
             >
-              {t("hero.cta.participate")}
+              {t("hero.cta.learn.study")}
             </a>
           </div>
 
@@ -119,11 +119,6 @@ export default function Home() {
                 href: "/study",
                 title: t("nav.study"),
                 desc: t("home.card.study"),
-              },
-              {
-                href: "/participate",
-                title: t("nav.participate"),
-                desc: t("home.card.participate"),
               },
               {
                 href: "/team",

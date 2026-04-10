@@ -24,7 +24,6 @@ export default function Navigation() {
     { href: "/science", label: t("nav.science") },
     { href: "/technology", label: t("nav.technology") },
     { href: "/study", label: t("nav.study") },
-    { href: "/participate", label: t("nav.participate") },
     { href: "/team", label: t("nav.team") },
   ];
 

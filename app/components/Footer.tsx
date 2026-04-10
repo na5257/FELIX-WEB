@@ -35,7 +35,7 @@ export default function Footer() {
               <li><a href="/about" className="hover:text-white/80 transition-colors">{t("nav.about")}</a></li>
               <li><a href="/science" className="hover:text-white/80 transition-colors">{t("nav.science")}</a></li>
               <li><a href="/study" className="hover:text-white/80 transition-colors">{t("nav.study")}</a></li>
-              <li><a href="/participate" className="hover:text-white/80 transition-colors">{t("nav.participate")}</a></li>
+
               <li><a href="/team" className="hover:text-white/80 transition-colors">{t("nav.team")}</a></li>
               <li>
                 <a href="https://clinicaltrials.gov/ct2/show/NCT05680220" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
