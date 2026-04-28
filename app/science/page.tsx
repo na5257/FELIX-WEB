@@ -8,6 +8,10 @@ import GammaAnimation from "../components/GammaAnimation";
 export default function SciencePage() {
   const { t } = useLanguage();
   const [activeSection, setActiveSection] = useState("gamma");
+  const optionalT = (key: string) => {
+    const value = t(key);
+    return value === key ? "" : value;
+  };
   const sections = [
     {
       id: "gamma",
@@ -114,6 +118,18 @@ export default function SciencePage() {
         "Wang C, Lin C, Zhao Y, et al. 40-Hz optogenetic stimulation rescues functional synaptic plasticity after stroke. Cell Reports. 2023.",
       href: "https://doi.org/10.1016/j.celrep.2023.113475",
     },
+    {
+      id: 6,
+      citation:
+        "Yin YY, Li YF. Role of neural oscillations in depression: highlights on gamma oscillations. Translational Psychiatry. 2026. Article in press.",
+      href: "https://doi.org/10.1038/s41398-026-03991-x",
+    },
+    {
+      id: 7,
+      citation:
+        "Yao J, Zhang L, Zhang C, et al. Rhythmic gamma frequency light flickering ameliorates stress-related behaviors and cognitive deficits by modulating neuroinflammatory response through IL-12-mediated cytokine production in chronic stress-induced mice. Brain, Behavior, and Immunity. 2024.",
+      href: "https://doi.org/10.1016/j.bbi.2024.07.022",
+    },
   ];
 
   const activeSectionData =
@@ -141,9 +157,11 @@ export default function SciencePage() {
 
           <div className="rounded-3xl border border-[var(--color-sage)]/15 bg-[var(--color-cream)] p-8 md:p-10">
             <div className="max-w-3xl mb-6">
-              <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
-                {t("sci.animation.eyebrow")}
-              </p>
+              {optionalT("sci.animation.eyebrow") ? (
+                <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
+                  {optionalT("sci.animation.eyebrow")}
+                </p>
+              ) : null}
               <h3 className="text-2xl md:text-3xl font-light heading-serif text-[var(--foreground)] mb-4">
                 {t("sci.animation.title")}
               </h3>
@@ -157,43 +175,109 @@ export default function SciencePage() {
             />
           </div>
 
-          <div className="rounded-3xl border border-[var(--color-sage)]/15 bg-[var(--color-sage)]/5 p-8 md:p-10">
-            <div className="max-w-3xl mb-8">
-              <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
-                {t("sci.hypothesis.eyebrow")}
-              </p>
+          <div className="border-y border-[var(--color-sage)]/15 py-12 md:py-14">
+            <div className="grid md:grid-cols-[minmax(0,0.95fr)_minmax(20rem,1.05fr)] gap-10 md:gap-14 items-start">
+              <div className="max-w-2xl">
+                <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
+                  {t("sci.hypothesis.eyebrow")}
+                </p>
+                <h3 className="text-2xl md:text-3xl font-light heading-serif text-[var(--foreground)] mb-4">
+                  {t("sci.hypothesis.title")}
+                </h3>
+                <p className="text-[var(--muted)] body-text">
+                  {t("sci.hypothesis.body")}
+                </p>
+              </div>
+
+              <ol className="space-y-6 md:space-y-0">
+                {hypothesisSteps.map((step, index) => (
+                  <li
+                    key={step.titleKey}
+                    className="relative pl-12 md:pl-0 md:grid md:grid-cols-[auto_1fr] md:gap-5 md:items-start"
+                  >
+                    <div className="absolute left-0 top-0 md:static flex md:block items-center">
+                      <div className="w-9 h-9 rounded-full border border-[var(--color-sage)]/25 bg-white text-[var(--color-forest)] text-sm flex items-center justify-center">
+                        0{index + 1}
+                      </div>
+                    </div>
+                    <div className="pb-2 md:pb-0">
+                      <h4 className="text-base md:text-lg font-medium text-[var(--foreground)] mb-2">
+                        {t(step.titleKey)}
+                      </h4>
+                      <p className="text-sm md:text-[15px] leading-7 text-[var(--muted)]">
+                        {t(step.bodyKey)}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+
+          <div className="rounded-3xl border border-[var(--color-forest)]/12 bg-[var(--color-forest)]/[0.03] p-8 md:p-10">
+            <div className="max-w-4xl mb-8">
+              {optionalT("sci.eeg.eyebrow") ? (
+                <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
+                  {optionalT("sci.eeg.eyebrow")}
+                </p>
+              ) : null}
               <h3 className="text-2xl md:text-3xl font-light heading-serif text-[var(--foreground)] mb-4">
-                {t("sci.hypothesis.title")}
+                {t("sci.eeg.title")}
               </h3>
               <p className="text-[var(--muted)] body-text">
-                {t("sci.hypothesis.body")}
+                {t("sci.eeg.body")}
               </p>
             </div>
-            <div className="grid md:grid-cols-4 gap-4">
-              {hypothesisSteps.map((step, index) => (
-                <div
-                  key={step.titleKey}
-                  className="rounded-2xl border border-[var(--color-sage)]/10 bg-white/80 p-5"
-                >
-                  <div className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/55 mb-3">
-                    0{index + 1}
-                  </div>
+
+            <div className="grid md:grid-cols-[minmax(0,1.25fr)_minmax(18rem,0.9fr)] gap-10 items-start">
+              <div className="space-y-5">
+                <p className="text-[var(--muted)] body-text">
+                  {t("sci.eeg.p1")}
+                </p>
+                <p className="text-[var(--muted)] body-text">
+                  {t("sci.eeg.p2")}
+                </p>
+                <p className="text-sm leading-7 text-[var(--muted)] border-t border-[var(--color-forest)]/10 pt-5">
+                  {t("sci.eeg.note")}
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-[var(--color-forest)]/10 bg-white/80 px-6 py-3">
+                <div className="py-4 border-b border-[var(--color-forest)]/10 last:border-b-0">
                   <h4 className="text-base font-medium text-[var(--foreground)] mb-2">
-                    {t(step.titleKey)}
+                    {t("sci.eeg.card1.title")}
                   </h4>
                   <p className="text-sm leading-6 text-[var(--muted)]">
-                    {t(step.bodyKey)}
+                    {t("sci.eeg.card1.body")}
                   </p>
                 </div>
-              ))}
+                <div className="py-4 border-b border-[var(--color-forest)]/10 last:border-b-0">
+                  <h4 className="text-base font-medium text-[var(--foreground)] mb-2">
+                    {t("sci.eeg.card2.title")}
+                  </h4>
+                  <p className="text-sm leading-6 text-[var(--muted)]">
+                    {t("sci.eeg.card2.body")}
+                  </p>
+                </div>
+                <div className="py-4">
+                  <h4 className="text-base font-medium text-[var(--foreground)] mb-2">
+                    {t("sci.eeg.card3.title")}
+                  </h4>
+                  <p className="text-sm leading-6 text-[var(--muted)]">
+                    {t("sci.eeg.card3.body")}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="space-y-8">
             <div className="max-w-3xl">
-              <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
-                {t("sci.disclosure.eyebrow")}
-              </p>
+              {optionalT("sci.disclosure.eyebrow") ? (
+                <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
+                  {optionalT("sci.disclosure.eyebrow")}
+                </p>
+              ) : null}
               <h3 className="text-2xl md:text-3xl font-light heading-serif text-[var(--foreground)] mb-4">
                 {t("sci.disclosure.title")}
               </h3>
@@ -278,9 +362,11 @@ export default function SciencePage() {
                 <div className="md:col-span-4">
                   {activeSectionData.id === "brainhealth" ? (
                     <div>
-                      <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
-                        {t("sci.brainhealth.eyebrow")}
-                      </p>
+                      {optionalT("sci.brainhealth.eyebrow") ? (
+                        <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
+                          {optionalT("sci.brainhealth.eyebrow")}
+                        </p>
+                      ) : null}
                       <h3 className="text-xl md:text-2xl font-light mb-4 heading-serif text-[var(--foreground)]">
                         {t("sci.brainhealth.title")}
                       </h3>
