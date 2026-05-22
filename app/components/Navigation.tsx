@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Navigation() {
@@ -38,7 +39,7 @@ export default function Navigation() {
       >
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <div
               className={`w-9 h-9 rounded-full flex items-center justify-center transition-all duration-500 ${
                 showSolid
@@ -64,7 +65,7 @@ export default function Navigation() {
             >
               FELIX
             </span>
-          </a>
+          </Link>
 
           {/* Mobile: language + hamburger */}
           <div className="flex md:hidden items-center gap-3">
@@ -116,7 +117,7 @@ export default function Navigation() {
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-7 text-sm">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className={`transition-colors duration-300 ${
@@ -130,7 +131,7 @@ export default function Navigation() {
                 }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
 
             <div
@@ -178,7 +179,7 @@ export default function Navigation() {
           <div className="absolute top-[72px] left-0 right-0 bg-[var(--background)] border-b border-[var(--color-sage)]/10 shadow-lg">
             <div className="px-6 py-4 space-y-1">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
@@ -189,7 +190,7 @@ export default function Navigation() {
                   }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

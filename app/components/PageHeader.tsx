@@ -12,7 +12,7 @@ export default function PageHeader({ tag, title, subtitle }: PageHeaderProps) {
       {/* Background: cropped version of the hero leaves */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url(/hero-leaves.jpg)", backgroundPosition: "center 30%" }}
+        style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero-leaves.jpg)`, backgroundPosition: "center 30%" }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-forest-deep)]/80 via-[var(--color-forest)]/70 to-[var(--color-forest-deep)]/90" />
 

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useLanguage } from "./contexts/LanguageContext";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url(/hero-leaves.jpg)" }}
+          style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero-leaves.jpg)` }}
         />
         <div className="absolute inset-0 hero-overlay" />
 
@@ -38,18 +39,18 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-400">
-            <a
+            <Link
               href="/about"
               className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300"
             >
               {t("hero.cta.learn")}
-            </a>
-            <a
+            </Link>
+            <Link
               href="/study"
               className="px-8 py-4 bg-[var(--color-gold)] text-[var(--color-forest-deep)] rounded-full hover:bg-[var(--color-gold-light)] transition-all duration-300 font-medium"
             >
               {t("hero.cta.learn.study")}
-            </a>
+            </Link>
           </div>
 
           <p className="mt-12 text-white/40 text-xs animate-fade-in-up delay-500">
@@ -85,7 +86,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10">
-            <a
+            <Link
               href="/about"
               className="inline-flex items-center gap-2 text-sm text-[var(--color-forest)] hover:text-[var(--color-sage)] transition-colors"
             >
@@ -93,7 +94,7 @@ export default function Home() {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -126,7 +127,7 @@ export default function Home() {
                 desc: t("home.card.team"),
               },
             ].map((link, i) => (
-              <a
+              <Link
                 key={i}
                 href={link.href}
                 className="group flex items-baseline justify-between py-6 border-b border-[var(--color-sage)]/15 hover:border-[var(--color-forest)]/40 transition-colors"
@@ -146,7 +147,7 @@ export default function Home() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
-              </a>
+              </Link>
             ))}
           </nav>
         </div>

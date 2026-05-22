@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useLanguage } from "../contexts/LanguageContext";
 import PageHeader from "../components/PageHeader";
 import GammaAnimation from "../components/GammaAnimation";
@@ -175,39 +176,40 @@ export default function SciencePage() {
             />
           </div>
 
-          <div className="border-y border-[var(--color-sage)]/15 py-12 md:py-14">
-            <div className="grid md:grid-cols-[minmax(0,0.95fr)_minmax(20rem,1.05fr)] gap-10 md:gap-14 items-start">
-              <div className="max-w-2xl">
-                <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
-                  {t("sci.hypothesis.eyebrow")}
-                </p>
-                <h3 className="text-2xl md:text-3xl font-light heading-serif text-[var(--foreground)] mb-4">
-                  {t("sci.hypothesis.title")}
-                </h3>
-                <p className="text-[var(--muted)] body-text">
-                  {t("sci.hypothesis.body")}
-                </p>
-              </div>
+          <div className="border-y border-[var(--color-sage)]/15 py-14 md:py-18">
+            <div className="max-w-3xl mb-10">
+              <p className="text-xs uppercase tracking-[0.18em] text-[var(--color-forest)]/70 mb-3">
+                {t("sci.hypothesis.eyebrow")}
+              </p>
+              <h3 className="text-2xl md:text-3xl font-light heading-serif text-[var(--foreground)] mb-4">
+                {t("sci.hypothesis.title")}
+              </h3>
+              <p className="text-[var(--muted)] body-text">
+                {t("sci.hypothesis.body")}
+              </p>
+            </div>
 
-              <ol className="space-y-6 md:space-y-0">
+            <div className="relative">
+              <div className="hidden md:block absolute top-6 left-0 right-0 h-px bg-gradient-to-r from-[var(--color-sage)]/20 via-[var(--color-sage)]/35 to-[var(--color-sage)]/20" />
+              <ol className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
                 {hypothesisSteps.map((step, index) => (
-                  <li
-                    key={step.titleKey}
-                    className="relative pl-12 md:pl-0 md:grid md:grid-cols-[auto_1fr] md:gap-5 md:items-start"
-                  >
-                    <div className="absolute left-0 top-0 md:static flex md:block items-center">
-                      <div className="w-9 h-9 rounded-full border border-[var(--color-sage)]/25 bg-white text-[var(--color-forest)] text-sm flex items-center justify-center">
-                        0{index + 1}
+                  <li key={step.titleKey} className="relative">
+                    <div className="flex items-center gap-3 md:gap-0 md:flex-col md:items-start mb-3 md:mb-4">
+                      <div className="relative z-10 w-12 h-12 rounded-full bg-white border border-[var(--color-sage)]/20 flex items-center justify-center shadow-sm">
+                        <span className="text-xs font-medium tracking-wide text-[var(--color-forest)]">
+                          {["I", "II", "III", "IV"][index]}
+                        </span>
                       </div>
+                      {index < 3 && (
+                        <div className="md:hidden flex-1 h-px bg-[var(--color-sage)]/20" />
+                      )}
                     </div>
-                    <div className="pb-2 md:pb-0">
-                      <h4 className="text-base md:text-lg font-medium text-[var(--foreground)] mb-2">
-                        {t(step.titleKey)}
-                      </h4>
-                      <p className="text-sm md:text-[15px] leading-7 text-[var(--muted)]">
-                        {t(step.bodyKey)}
-                      </p>
-                    </div>
+                    <h4 className="text-sm font-semibold text-[var(--foreground)] uppercase tracking-wide mb-2">
+                      {t(step.titleKey)}
+                    </h4>
+                    <p className="text-sm leading-relaxed text-[var(--muted)]">
+                      {t(step.bodyKey)}
+                    </p>
                   </li>
                 ))}
               </ol>
@@ -465,7 +467,7 @@ export default function SciencePage() {
           <div className="pt-10 border-t border-[var(--color-sage)]/15">
             <p className="text-[var(--muted)] text-sm mb-4">{t("science.cta.text")}</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
+              <Link
                 href="/technology"
                 className="inline-flex items-center gap-2 text-sm text-[var(--color-forest)] hover:text-[var(--color-sage)] transition-colors"
               >
@@ -473,8 +475,8 @@ export default function SciencePage() {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/study"
                 className="inline-flex items-center gap-2 text-sm text-[var(--color-forest)] hover:text-[var(--color-sage)] transition-colors"
               >
@@ -482,7 +484,7 @@ export default function SciencePage() {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

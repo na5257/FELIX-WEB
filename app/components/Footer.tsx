@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Footer() {
@@ -32,11 +33,11 @@ export default function Footer() {
           <div>
             <h4 className="font-medium text-white/90 mb-4 text-sm">{t("footer.links")}</h4>
             <ul className="space-y-2 text-sm text-white/50">
-              <li><a href="/about" className="hover:text-white/80 transition-colors">{t("nav.about")}</a></li>
-              <li><a href="/science" className="hover:text-white/80 transition-colors">{t("nav.science")}</a></li>
-              <li><a href="/study" className="hover:text-white/80 transition-colors">{t("nav.study")}</a></li>
+              <li><Link href="/about" className="hover:text-white/80 transition-colors">{t("nav.about")}</Link></li>
+              <li><Link href="/science" className="hover:text-white/80 transition-colors">{t("nav.science")}</Link></li>
+              <li><Link href="/study" className="hover:text-white/80 transition-colors">{t("nav.study")}</Link></li>
 
-              <li><a href="/team" className="hover:text-white/80 transition-colors">{t("nav.team")}</a></li>
+              <li><Link href="/team" className="hover:text-white/80 transition-colors">{t("nav.team")}</Link></li>
               <li>
                 <a href="https://clinicaltrials.gov/ct2/show/NCT05680220" target="_blank" rel="noopener noreferrer" className="hover:text-white/80 transition-colors">
                   ClinicalTrials.gov
